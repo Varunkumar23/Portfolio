@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowDown, Download, MessageSquare } from 'lucide-react';
 import Button from './ui/Button';
 import profile from '../assests/WhatsApp Image 2025-04-26 at 16.28.51_1ad69832.jpg';
+import resume from '../assests/resume.pdf'
 
 const Hero: React.FC = () => {
   return (
@@ -29,13 +30,14 @@ const Hero: React.FC = () => {
               Passionate about AI, machine learning, and solving real-world problems through data science.
             </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start animate-fadeIn animation-delay-600">
-              <Button 
-                onClick={() => window.open('/resume.pdf')}
-                variant="primary" 
-                icon={<Download size={16} />}
+              <a 
+                href={resume}
+                target='_blank'
+                className='bg-blue-400 p-2 rounded-xl flex items-center justify-center gap-2'
               >
+                <Download size={16} />
                 Download Resume
-              </Button>
+              </a>
               <Button 
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 variant="secondary" 
