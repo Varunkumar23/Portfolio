@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowDown, Download, MessageSquare } from 'lucide-react';
 import Button from './ui/Button';
-import profile from '../assests/WhatsApp Image 2025-04-26 at 16.28.52_58db6abe.jpg';
+import profile from '../assests/WhatsApp Image 2025-04-26 at 16.28.51_1ad69832.jpg';
 
 const Hero: React.FC = () => {
   return (
